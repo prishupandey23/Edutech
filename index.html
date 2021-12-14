@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Web Page</title>
+  <style>
+    #head{
+      color:rgb(243, 243, 247);
+      background-color: blue;
+      padding: 0px 100px 20px 100px;
+      font-size: 30px;
+      font-style: oblique;
+      text-align: center;
+    }
+
+    [type='radio']{
+      margin:5px 0px 5px 0px;
+    }
+    
+    #form{
+      padding: 10px 0px 0px 20px;
+      margin: 0px 10px 0px 20px;
+      background-color: aquamarine;
+      border-width: 0.5px;
+      border-radius: 10px;
+      border-color:blue;
+      border-style: solid;
+      width:900px;
+    }
+    body{
+      background-color: rgb(195, 246, 255);
+    }
+
+    h2{
+      color:red !important;
+      font-size:30px;
+      text-align: center;
+    }
+
+    .text-color{
+      color:blueviolet;
+      font-size:20px;
+      font-family:Helvetica, sans-serif;
+      font-weight: 600;
+    }
+
+#button{
+  background-color: rgb(13, 235, 24);
+  color:aliceblue;
+  font-size: large;
+  font-style: normal;
+  padding: 5px 10px 5px 10px;
+  margin: 5px 0px 20px 30px;
+  border-radius: 15%;
+}
+
+    #foot{
+      color:aliceblue;
+      background-color:blue;
+      padding: 0px 100px 20px 100px;
+      font-size: 30px;
+      font-style: oblique;
+      text-align: center;
+      text-align-last: auto;
+    }
+  </style>
+</head>
+<body>
+  <header id="head">Form by Prishu Pandey!!</header>
+
+  <h2 style="color: blue;">This is a Sample Form!!</h1>
+
+  <!--Below are the questions of the form-->
+  <div id="form">
+  <form action="#">
+    <p class="text-color">1. What is your name?</p>
+    <input type="text" placeholder="Enter your name" required>
+
+    <p class="text-color">2. What is your email?</p>
+    <input type="text" placeholder="Enter your email" required>
+
+    <p class="text-color">3. Select your Branch?</p>
+    <label for ="ise">
+      <input id="ise" value="ise" type="radio" name="Branch" checked>Information Science
+    </label>
+    <label for = "cse">
+      <input id="cse" value="cse" type="radio" name="Branch" >Computer Science
+    </label>
+    <label for ="elec">
+      <input id="elec" value="elec" type="radio" name="Branch">Electrical
+    </label>
+
+    <p class="text-color">4. Select your Interest?</p>
+    <label for ="android">
+      <input id="android" value="android" type="checkbox" name="Interest">Android
+    </label>
+    <label for ="web">
+      <input id="web" value="web" type="checkbox" name="Interest">Web Development
+    </label>
+    <label for ="data science">
+      <input id="data science" value="data science" type="checkbox" name="Interest">Data Science
+    </label>
+    
+ <br><br><br>
+
+ <a href="second.html" id="button">Submit</a>
+
+ </form>
+
+<br><br><br>
+
+</div>
+<br><br>
+<br><br>
+
+ <footer id="foot">This is the end of the form...</footer>
+</body>
+</html>

@@ -1,98 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <title>Login Page</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login Portal</title>
+    <link rel="icon" href="https://key0.cc/images/preview/143630_655fd4b63cf45dfafc675fb19e95b1c2.png" type="img/png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        #navbar {
+            left: 0px;
+            top: 0px;
+            position: fixed;
+            width: 100%;
+            background-color: blue;
+        }
+        
+        h1 {
+            text-align: center;
+            text-decoration-color: black;
+            margin-top: 100px;
+            font-family: sans-serif;
+        }
+        
+        nav-ul {
+            margin: 0px;
+            padding: 5px 0px 5px 30px;
+            color: white;
+            text-align: center;
+        }
+        
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        h4 {
+            text-align: center;
+            background-color: rgba(45, 45, 45, 0.1);
+            padding: 10px;
+            font-size: 27px;
+            color: blue;
+        }
+        
+        .fullCard {
+            width: 245px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: auto;
+            padding: 4px;
+            align-self: center;
+        }
+        
+        #thumbnail {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        }
+        
+        .cardContent {
+            padding: 10px;
+        }
+        
+        .cardText {
+            margin-bottom: 30px;
+        }
+        
+        #button-style {
+            background-color: green;
+            color: white;
+            border-top: 10px;
+            border-radius: 1px;
+            border-color: black;
+            padding: 5px;
+        }
+    </style>
+
 </head>
 
-<style>
-	#navbar {
-		left: 0px;
-		top: 0px;
-		position: fixed;
-		width: 100%;
-		background-color: blue;
-	}
+<body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-	h1 {
-		text-align: center;
-		text-decoration-color: black;
-		margin-top: 100px;
-		font-family: sans-serif;
-	}
+    <div class="fixed-top">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <span class="text-muted">Everything to manage the Hostel is here.</span>
+                <h5 class="text-white h6"><a href="#" class="text-white h4" style="font-size:20px;">Home</a></h5>
+                <h5 class="text-muted"><a href="#" class="text-white h4" style="font-size:20px;">Admin Login</a></h5>
+                <h5 class="text-white h6"><a href="#" class="text-white h4" style="font-size:20px;">Student Login</a></h5>
 
-	nav-ul {
-         margin: 0px;
-         padding:5px 0px 5px 30px;
-         color: white;
-		text-align: center;
-	}
-
-	nav li{
-		display: inline;
-		margin-right: 20px;
-		
-	}
-
- h4 {
-    text-align: center;
-    background-color: rgba(45, 45, 45, 0.1);
-    padding: 10px;
-    font-size: 27px;
-    color: blue;
-  }
-
-  .fullCard {
-    width: 245px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: auto;
-    padding: 4px;
-    align-self: center;
-  }
-  #thumbnail {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  }
-  .cardContent {
-    padding: 10px;
-  }
-  .cardText {
-    margin-bottom: 30px;
-  }
-  #button-style {
-  	background-color: green;
-  	color: white;
-    border-top: 10px;
-  	border-radius: 1px;
-  	border-color: black;
-  	padding: 5px;
-  }
-  </style>
-
-<!--Header Content-->
-  <header>
-  	<nav id="navbar">
-  		<ul>
-  			<li><a href="#" ></li>
-  			<li><a href="#" ></li>
-  		</ul>
-  	</nav>
-  </header>
-
-  <h1> Welcome to Edutech!</h1>
-<div class="fullCard" id="thumbnail" >
-  <div class="cardContent">
-    <div class="cardText">
-      <h4>LOGIN</h4>
-      <hr>
-  <form action="#">
-      <p>Email</p>
-      <input type="text" placeholder="Enter your email" required>
-      <p>Password</p>
-      <input type="password" placeholder="Enter the password" required>
-         
-      <br><br><br>
-    
-     <a href="demain.html" id="button-style">Submit</a>
-  
-  </form>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark" id="navbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
     </div>
-  </div>
-</div>
+
+    <h1> Welcome to Edutech!</h1>
+    <div class="fullCard" id="thumbnail">
+        <div class="cardContent">
+            <div class="cardText">
+                <h4>LOGIN</h4>
+                <hr>
+                <form action="#">
+                    <p>Email</p>
+                    <input type="text" placeholder="Enter your email" required>
+                    <br>
+                    <p>Password</p>
+                    <input type="password" placeholder="Enter the password" required>
+
+                    <br><br><br>
+
+                    <a href="demain.html" id="button-style">Submit</a>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
